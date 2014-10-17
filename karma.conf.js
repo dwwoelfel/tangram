@@ -19,7 +19,7 @@ module.exports = function (config) {
         reporters: ['mocha'],
         port: 9876,
         colors: false,
-        logLevel: config.LOG_INFO,
+        logLevel: config.LOG_DEBUG,
         autoWatch: false,
         browsers: ['Chrome_with_webgl_flag'],
         customLaunchers: {
