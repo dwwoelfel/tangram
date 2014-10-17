@@ -16,7 +16,7 @@ module.exports = function (config) {
         ],
         exclude: [  ],
         preprocessors: {  },
-        reporters: ['progress'],
+        reporters: ['mocha'],
         port: 9876,
         colors: false,
         logLevel: config.LOG_INFO,
