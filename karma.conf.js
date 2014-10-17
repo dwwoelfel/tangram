@@ -21,7 +21,13 @@ module.exports = function (config) {
         colors: false,
         logLevel: config.LOG_INFO,
         autoWatch: false,
-        browsers: ['Chrome'],
+        browsers: ['Chrome_with_webgl_flag'],
+        customLaunchers: {
+          Chrome_with_webgl_flag: {
+            base: "Chrome",
+            flags: ["--enable-webgl"]
+          }
+        },
         proxies: {
             '/': 'http://localhost:9876/base/dist/'
         },
